@@ -1,0 +1,12 @@
+{
+  "name": "clauding",
+  "displayName": "Clauding — Subject-Themed Spinner Verbs",
+  "description": "Replace or extend Claude Code's loading-spinner verbs with subject-themed present-participle verbs. Run /clauding <subject> [replace|append] to generate and install a themed batch; /clauding reset restores the built-in defaults.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kris E. Granholm",
+    "email": "292265287+highsierralabs@users.noreply.github.com"
+  },
+  "keywords": ["spinner", "fun", "theme", "verbs", "spinnerVerbs", "productivity"],
+  "license": "MIT"
+}

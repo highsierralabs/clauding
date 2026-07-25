@@ -1,0 +1,14 @@
+{
+  "name": "highsierralabs",
+  "owner": {
+    "name": "Kris E. Granholm",
+    "email": "292265287+highsierralabs@users.noreply.github.com"
+  },
+  "plugins": [
+    {
+      "name": "clauding",
+      "source": "./plugins/clauding",
+      "description": "Replaces or extends Claude Code's loading-spinner verbs with subject-themed present-participle verbs (e.g. baking -> Kneading, Proofing, Blitzing)."
+    }
+  ]
+}
