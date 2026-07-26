@@ -1,8 +1,8 @@
-# Clauding — Subject-Themed Spinner Verbs 🌀
+# Clauding — Subject-Themed Spinner Verbs
 
 Theme Claude Code's loading spinner around any subject you like. Run
 `/clauding baking` and the spinner stops saying `Pondering…` and starts saying
-`Kneading…`, `Proofing…`, `Blitzing…`. Works for hobbies, fandoms, sports,
+`Kneading…`, `Proofing…`, `Mixing…`. Works for hobbies, fandoms, sports,
 sciences — anything with a vocabulary.
 
 No API keys, no external servers: the skill generates a tight batch of
@@ -58,7 +58,7 @@ Claude Code reads an undocumented `spinnerVerbs` key from
 ```json
 "spinnerVerbs": {
   "mode": "replace",
-  "verbs": ["Kneading", "Proofing", "Blitzing"]
+  "verbs": ["Kneading", "Proofing", "Mixing"]
 }
 ```
 
