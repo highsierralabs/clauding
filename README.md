@@ -1,11 +1,11 @@
-# Clauding — Subject-Themed Spinner Verbs
+# Clauding - Subject-Themed Spinner Verbs
 
 Theme Claude Code's loading spinner around any subject you like. Run
 `/clauding baking` and the spinner stops saying `Pondering…` and starts saying
 `Kneading…`, `Proofing…`, `Mixing…`. Works for hobbies, fandoms, sports,
-sciences — anything with a vocabulary.
+sciences, anything with a vocabulary.
 
-No API keys, no external servers: the skill generates a tight batch of
+The skill generates a tight batch of
 present-participle verbs for your subject and installs them into Claude Code's
 (undocumented) `spinnerVerbs` key in `~/.claude/settings.json`.
 
@@ -40,12 +40,12 @@ The skill is then invoked as plain `/clauding <subject>`.
 /clauding reset                        # restore Claude Code's built-in verbs
 ```
 
-- **replace** (default) — your themed verbs are the only ones shown.
-- **append** — your verbs join the ~185 built-in defaults (always fresh, but
+- **replace** (default) - your themed verbs are the only ones shown.
+- **append** - your verbs join the ~185 built-in defaults (always fresh, but
   your theme becomes a minority of the pool).
 - If a subject yields fewer than ~20 strong verbs in defaulted-replace mode, the
   skill pauses and asks whether you'd rather append, replace anyway, or extend
-  the list — a small pool in replace mode starts repeating within a session.
+  the list - a small pool in replace mode starts repeating within a session.
 - Changes take effect immediately, no restart needed. Your previous
   `settings.json` is backed up to `~/.claude/settings.json.bak` before every
   change.
@@ -62,7 +62,7 @@ Claude Code reads an undocumented `spinnerVerbs` key from
 }
 ```
 
-Verbs are stored bare — the UI appends the animated `…` itself. The skill
+Verbs are stored bare - the UI appends the animated `…` itself. The skill
 handles verb generation (quality-gated, ~15–40 per subject), mode resolution,
 backup, and safe JSON editing; `/clauding reset` deletes the key to fall back to
 the built-in defaults.
