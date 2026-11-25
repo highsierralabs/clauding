@@ -10,7 +10,8 @@ disable-model-invocation: false
 
 Your job: turn the chosen subject into a batch of short, present-participle verbs
 that match the cadence of Claude Code's native whimsical spinner verbs
-(`Cooking…`, `Pondering…`, `Flibbertigibbeting…`), then install them into the
+(`Cooking…`, `Pondering…`, `Flibbertigibbeting…`). Verbs are **one word each** by default.
+Then install them into the
 user's `~/.claude/settings.json` under the `spinnerVerbs` key.
 
 **Format facts (verified, the feature is undocumented):**
@@ -62,11 +63,12 @@ Triggered when the request is `reset` / `restore` / `default` / `off`. Do NOT ge
 
 Produce themed verbs for the subject. Follow ALL of these:
 
-1. **Present participle.** Each entry is a gerund / "-ing" verb, or a short evocative
-   "-ing" phrase. Good: `Kneading`, `Transporting`, `Blitzing`, `Boldly Going`, `Making it so`.
+1. **One word, present participle.** Each entry is a single gerund / "-ing" word, like the
+   built-in verbs. Good: `Kneading`, `Transporting`, `Blitzing`, `Mind-melding`. A hyphenated
+   compound counts as one word. Do not use multi-word phrases (`Boldly Going`, `Making it so`)
+   unless the user's request explicitly asks for phrases.
 2. **Bare strings, no trailing "…".** The UI adds the animated dots.
 3. **Short.** Keep each roughly <= 24 characters so it renders cleanly in a terminal.
-   One- or two-word entries are ideal; an occasional three-word phrase is fine for flavor.
 4. **In-cadence and recognizable.** Each should sound like something the agent could
    plausibly be *doing*, and land for someone who knows the subject. Mix the obvious
    (`Mixing`, `Beaming`) with the deeper cut (`Proofing`, `Mind-melding`) so it never
