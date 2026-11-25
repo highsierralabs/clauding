@@ -6,7 +6,8 @@ Theme Claude Code's loading spinner around any subject you like. Run
 sciences, anything with a vocabulary.
 
 The skill generates a tight batch of
-present-participle verbs for your subject and installs them into Claude Code's
+one-word, present-participle verbs for your subject (ask for phrases in your
+request if you want them) and installs them into Claude Code's
 (undocumented) `spinnerVerbs` key in `~/.claude/settings.json`.
 
 ## Install
